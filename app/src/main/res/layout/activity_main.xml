@@ -8,6 +8,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
+    android:backgroundTint="@color/colorBackground"
     tools:context="br.com.schelb.fernando.arduinobluetooth.MainActivity">
 
     <TextView
@@ -15,12 +16,14 @@
         android:layout_height="wrap_content"
         android:text="Devices Pareados"
         android:layout_gravity="center"
+        android:textColor="@color/colorFont"
         android:textSize="20dp"
         android:textStyle="bold" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:backgroundTint="@color/colorButton"
         android:text="Listar Devices Pareados"
         android:id="@+id/bt_pareados"
         android:layout_gravity="center" />

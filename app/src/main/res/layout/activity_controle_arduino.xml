@@ -8,7 +8,16 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
+    android:backgroundTint="@color/colorBackground"
     tools:context="br.com.schelb.fernando.arduinobluetooth.ControleArduino">
+
+    <!--linha horizontal-->
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.2dp"
+        android:id="@+id/separator1"
+        android:visibility="visible"
+        android:background="@android:color/darker_gray"/>
 
     <LinearLayout
         android:orientation="horizontal"
@@ -20,6 +29,7 @@
             android:layout_height="wrap_content"
             android:text="Ligar"
             android:id="@+id/bt_ligar"
+            android:backgroundTint="@color/colorButton"
             android:layout_weight="1" />
 
         <Button
@@ -27,14 +37,24 @@
             android:layout_height="wrap_content"
             android:text="Desligar"
             android:id="@+id/bt_desligar"
+            android:backgroundTint="@color/colorButton"
             android:layout_weight="1" />
     </LinearLayout>
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Desconectar Conexão BT"
+        android:text="Desconectar Dispositivo BlueTooth"
         android:id="@+id/bt_off_conexao_bt"
+        android:backgroundTint="@color/colorButton"
         android:layout_gravity="center_horizontal" />
+
+    <!--linha horizontal-->
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.2dp"
+        android:id="@+id/separator2"
+        android:visibility="visible"
+        android:background="@android:color/darker_gray"/>
 
 </LinearLayout>
